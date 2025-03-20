@@ -10,5 +10,7 @@ public string? Id { get; set; }
 
     public decimal Largo { get; set; }
     public decimal Ancho { get; set; }
-    public decimal Capacidad { get; set; } 
+    public int Capacidad { get; set; } 
+
+    public List<string>? Grupos {get; set;}
 }

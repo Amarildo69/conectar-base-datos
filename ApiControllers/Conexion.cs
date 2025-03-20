@@ -35,7 +35,7 @@ public IActionResult ListarCarrerasSql(){
    [HttpGet("mongo")]
     public IActionResult ListarSalonesMongoDb(){
         MongoClient client = new MongoClient(CadenaConexion.MONGO_DB);
-        var db = client.GetDatabase("Practica2_Amarildo_Juan");
+        var db = client.GetDatabase("Practica2_Ivan");
         var collection = db.GetCollection<SalonMongo>("Salones");
 
         var lista = collection.Find(FilterDefinition<SalonMongo>.Empty).ToList();
